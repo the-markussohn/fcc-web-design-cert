@@ -1,38 +1,48 @@
-#main {
-    max-width: 80%;
-    margin: auto;
-    background: red;
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-#title, #content, #img-div {
+#main {
+    max-width: 100%;
+    margin: auto;
+    background: #eee;
+    padding: 2%;
+}
+
+#title, #content {
     max-width: 100%;
 }
 
-#image, #img-caption {
-    max-width: 80%;
-}
-
-#title {
-    background: yellow;
-}
-
-#content {
-    background: blue;
-}
-
 #img-div {
-    background: green;
-    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+#image, #img-caption {
+    max-width: 100%;
+    display: block;
 }
 
 #image {
-    background: orange;
-    display: block;
-    margin: auto;
+    margin: 0 auto 1% auto;
 }
 
 #img-caption {
-    background: brown;
-    display: block;
     margin: auto;
+}
+
+#tribute-content {
+    text-align: justify;
+}
+
+li {
+    list-style: none;
 }
