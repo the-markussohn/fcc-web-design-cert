@@ -1,0 +1,38 @@
+#main {
+    max-width: 80%;
+    margin: auto;
+    background: red;
+}
+
+#title, #content, #img-div {
+    max-width: 100%;
+}
+
+#image, #img-caption {
+    max-width: 80%;
+}
+
+#title {
+    background: yellow;
+}
+
+#content {
+    background: blue;
+}
+
+#img-div {
+    background: green;
+    text-align: center;
+}
+
+#image {
+    background: orange;
+    display: block;
+    margin: auto;
+}
+
+#img-caption {
+    background: brown;
+    display: block;
+    margin: auto;
+}
