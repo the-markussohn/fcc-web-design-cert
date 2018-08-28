@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>markussohn: Survey Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <div class="form">
+            <p id="description">Description</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">* Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">* Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">* Age</label>
+                    <input type="number" id="number" placeholder="Enter Your Age" min="5" max="85" required>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Choose: </label>
+                    <select id="dropdown">
+                        <option disabled selected value="">--Please choose an option--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="radioList">Choose one: </label>
+                    <ul id="radioList">
+                        <li>
+                            <input type="radio" name="radio-buttons" id="radio-1" value="1">
+                            1
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-buttons" id="radio-2" value="2">
+                            2
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-buttons" id="radio-3" value="3">
+                            3
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="radioList">Choose some: </label>
+                    <ul id="checkboxList">
+                        <li>
+                            <input type="checkbox" name="checkbox-items" id="ch-1" value="1"> 1
+                        </li>
+                        <li>
+                            <input type="checkbox" name="checkbox-items" id="ch-2" value="2"> 2
+                        </li>
+                        <li>
+                            <input type="checkbox" name="checkbox-items" id="ch-3" value="3"> 3
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Type something: </label>
+                    <textarea name="textarea" id="textarea" placeholder="Type Something..."></textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
